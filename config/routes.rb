@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get '/about', to: 'static_pages#about'
 
   resources :people
+  resources :notes
 end
