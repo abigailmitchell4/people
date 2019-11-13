@@ -1,0 +1,8 @@
+<h1>People</h1>
+<br />
+<button><%= link_to "New Person", new_person_path %></button>
+<ul>
+<% @people.each do |p| %>
+  <li><%= link_to p.full_name, person_path(p.id)%></li>
+<% end %>
+</ul>

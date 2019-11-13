@@ -1,0 +1,27 @@
+<h1>New Person: <%= @person.full_name %> </h1>
+<%= form_for @person do |t| %>
+  <%= t.label :first_name %>
+  <%= t.text_field :first_name %>
+  <br/>
+  <%= t.label :last_name %>
+  <%= t.text_field :last_name %>
+  <br/>
+  <%= t.label :age %>
+  <%= t.text_field :age %>
+  <br/>
+  <%= t.label :hair_color %>
+  <%= t.text_field :hair_color %>
+  <br/>
+  <%= t.label :eye_color %>
+  <%= t.text_field :eye_color %>
+  <br/>
+  <%= t.label :gender %>
+  <%= t.text_field :gender %>
+  <br/>
+  <%= t.label :alive %>
+  <%= t.text_field :alive %>
+  <br/>
+  <%= t.submit %>
+  <br/>
+  <%= link_to "Back", people_path %>
+<% end %>
